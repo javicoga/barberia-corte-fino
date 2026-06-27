@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { services } from "@/data/services";
 
 export default function Home() {
@@ -38,13 +39,15 @@ export default function Home() {
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl border border-white/10 bg-gradient-to-br from-brand/20 via-zinc-900 to-black p-1 shadow-2xl">
-              <div className="flex h-full flex-col items-center justify-center rounded-xl bg-ink/60 text-center">
-                <span className="font-display text-7xl text-brand">✂</span>
-                <p className="mt-4 px-6 text-sm text-zinc-400">
-                  Sustituye este bloque por una foto real de tu local o trabajos.
-                </p>
-              </div>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+              <Image
+                src="/hero.png"
+                alt="Barbero cortando el pelo a un cliente en la barbería"
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>

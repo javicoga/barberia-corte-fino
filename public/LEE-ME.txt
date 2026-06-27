@@ -1,0 +1,6 @@
+Guarda aquí las imágenes del sitio.
+
+La imagen principal (hero) debe llamarse exactamente:  hero.jpg
+
+Si tu archivo tiene otro nombre o extensión (.png, .jpeg), o lo renombras
+a hero.jpg, o dime el nombre y ajusto el código.
