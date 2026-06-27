@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink text-zinc-200 antialiased;
+}
+
+.container-narrow {
+  @apply mx-auto w-full max-w-6xl px-5;
+}
